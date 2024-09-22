@@ -1,12 +1,29 @@
+*{
+    box-sizing: border-box;
+}
 body{
     display: flex;
     flex-direction: column;
 
 }
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a62a2a;
+}
+    
+
+ul li{
+    margin: 60px;
+}
+
+
 main{
     display: flex;
     flex-direction: row;
     flex: auto;
+    background-color: #EEE;
 
 }
 article{
@@ -16,6 +33,7 @@ article{
 aside{
     flex:1;
     overflow-y: auto;
+    border-left: 8px solid rgba(40, 99, 123, 0.582);
 }
 .works_on_smartphone {
     font-size: 16px; /* Set a base font size */
@@ -26,4 +44,19 @@ aside{
         font-size: 14px; /* Adjust font size for smaller screens */
         padding: 10px;   /* Change padding for better spacing */
     }
+}
+.ul_body li{
+    list-style-type: none;
+}
+header::before{
+    content: "影";
+    width: 10%;
+    height: 10%;
+    color: #EEE;
+    position: static;
+    top: 0;
+
+}
+footer{
+    background-color: bisque;
 }
