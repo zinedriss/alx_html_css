@@ -13,6 +13,7 @@
 :root {
    --homecolor: rgb(255, 255, 255);
    --move_color: rgba(194, 113, 255, 1);
+   --bluecolor:rgba(7, 22, 41, 1);
 }
 
 /* =====================
@@ -32,7 +33,7 @@ body {
 .hd{
     min-height: 100vh;
     background-image: url('../css_advanced/Media/background.png'); /* Single background image */
-    background-size: cover; /* Ensures the image covers the entire body */
+    background-size:cover; /* Ensures the image covers the entire body */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
 }
@@ -48,17 +49,11 @@ header nav {
     align-items: center;
 }
 
-.head {
-    background-image: url('../css_advanced/Media/background.png');
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-}
-
 nav ul {
     display: flex;
     width: 40%;
-    justify-content: space-between;
+    justify-content: end;
+    
 }
 
 nav ul li {
@@ -68,11 +63,12 @@ nav ul li {
     font-weight: 700;
     line-height: 15.08px;
     text-align: left;
+    padding: 20px;
 }
 
-ul li a:link {
+nav ul li a {
     text-decoration: none;
-    color: var(--homecolor);
+    color: var(--homecolor); /* Replace with your desired color */
 }
 
 /* =====================
@@ -196,6 +192,7 @@ blockquote {
 }
 
 .div_in_s2 h3 {
+    color: var(--homecolor);
     font-family: Source Sans Pro;
     font-size: 22px;
     font-weight: 700;
@@ -206,6 +203,7 @@ blockquote {
 }
 
 .div_in_s2 p {
+    color: var(--homecolor);
     font-family: Source Sans Pro;
     font-size: 22px;
     font-style: italic;
@@ -242,7 +240,7 @@ blockquote {
     width: 100%;
     justify-content: center;
     align-content: space-between;
-    margin: 50px;
+    padding: 50px;
 }
 
 .art3 h2 {
@@ -251,6 +249,7 @@ blockquote {
     font-weight: 300;
     line-height: 40.22px;
     text-align: center;
+    padding: 20px;
 }
 
 .art3 h2 span {
@@ -260,6 +259,7 @@ blockquote {
     line-height: 40.22px;
     text-align: center;
     color: var(--move_color);
+
 }
 
 /* =====================
@@ -370,4 +370,145 @@ blockquote {
 
 .icon_name h4 {
     margin-left: 5px;
+}
+.sec_4{
+    background: var(--bluecolor);
+    height: 502px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+.sec_4 h2{
+    color: var(--homecolor);
+    font-family: Source Sans Pro;
+font-size: 32px;
+font-weight: 300;
+line-height: 40.22px;
+text-align: center;
+
+
+}
+.sec_4 span{
+    color: var(--move_color);
+    font-family: Source Sans Pro;
+font-size: 32px;
+font-weight: 700;
+line-height: 40.22px;
+text-align: center;
+
+}
+
+.all_mem{
+    
+    padding: 30px;
+    color: var(--homecolor);
+    display: flex;
+    
+
+}
+.free_mem {
+    height: 153px; /* Optional: set a height */
+    max-width: 257px; /* Optional: set a width */
+    display: flex;
+   flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+.free_mem h3 {
+color: var(--homecolor);
+font-family: Source Sans Pro;
+font-size: 18px;
+font-weight: 600;
+line-height: 26px;
+
+
+}
+.loremp{
+    color: var(--homecolor);
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+}
+
+.all_faq{
+    width: 100%;
+    height: 707px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.all_faq h2{
+    font-family: Source Sans Pro;
+font-size: 60px;
+font-weight: 300;
+line-height: 75.42px;
+text-align: center;
+
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 350px;
+    height: 242px;
+    padding-top: 50px;
+}
+.article div{
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    
+
+}
+.article h3{
+    font-family: Source Sans Pro;
+font-size: 16px;
+font-weight: 700;
+line-height: 20.11px;
+text-align: left;
+
+
+}
+.two_article{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.four_article{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+footer{
+    height: 250px;
+    background-color:var(--bluecolor) ;
+}
+footer section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+footer section img{
+    width: 170px;
+    height: 30px;
+}
+footer section p{
+    align-self: flex-end;
+    padding: 40px;
+    color: var(--homecolor);
+    opacity: 0.5;
+
 }
