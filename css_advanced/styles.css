@@ -1,32 +1,67 @@
-*{
+/* =====================
+   Global Styles
+   ===================== */
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-   --homecolor : rgb(255, 255, 255);
-   --move_color: rgba(194, 113, 255, 1) ;
+
+/* =====================
+   Root Variables
+   ===================== */
+:root {
+   --homecolor: rgb(255, 255, 255);
+   --move_color: rgba(194, 113, 255, 1);
 }
+
+/* =====================
+   Body Styles
+   ===================== */
 body {
     margin: 0;
     position: relative;
+    
+    
+    
+}
+
+/* =====================
+   Section 1 Styles
+   ===================== */
+.hd{
     min-height: 100vh;
+    background-image: url('../css_advanced/Media/background.png'); /* Single background image */
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
-.sec_1{
-    background-image: url('../css_advanced/Media/background.png');
-    background-size: cover;
-    background-position: center;
-}
-header{
+
+header {
     padding: 30px;
 }
-header nav{
+
+header nav {
     height: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-nav ul li{
+
+.head {
+    background-image: url('../css_advanced/Media/background.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li {
     list-style: none;
     font-family: Source Sans Pro;
     font-size: 12px;
@@ -34,23 +69,22 @@ nav ul li{
     line-height: 15.08px;
     text-align: left;
 }
-ul li a:link{
+
+ul li a:link {
     text-decoration: none;
     color: var(--homecolor);
 }
-nav ul{
-    display: flex;
-    width: 40%;
-    justify-content: space-between;
-}
 
-.banner_1{
-    margin: 70px;
+/* =====================
+   Banner 1 Styles
+   ===================== */
+.banner_1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h1{
+
+h1 {
     color: var(--homecolor);
     font-family: Source Sans Pro;
     font-size: 120px;
@@ -58,7 +92,8 @@ h1{
     line-height: 150.84px;
     text-align: center;
 }
-.three_words{
+
+.three_words {
     font-family: Source Sans Pro;
     font-size: 16px;
     font-weight: 700;
@@ -66,46 +101,52 @@ h1{
     text-align: center;
     color: var(--homecolor);
 }
-.three{
+
+.three {
     display: flex;
-    width :60%;
+    width: 60%;
     justify-content: space-evenly;
-    
 }
-.first_button{
+
+.first_button {
     background: var(--move_color);
     color: var(--homecolor);
     width: 162px;
     height: 44px;
     border: 0;
+    border-radius: 50px;
     font-family: Source Sans Pro;
     font-size: 14px;
     font-weight: 600;
     line-height: 17.6px;
     text-align: center;
-
-    border-radius: 50px;
--webkit-border-radius: 50px;
--moz-border-radius: 50px;
--ms-border-radius: 50px;
--o-border-radius: 50px;
     margin-top: 20px;
 }
-.learn_from{
+
+/* =====================
+   Learn From Styles
+   ===================== */
+.learn_from {
     text-align: center;
     margin-bottom: 70px;
     color: var(--homecolor);
+    padding: 30px;
 }
-.learn_from span{
-    color: var(--move_color)
-    
+
+.learn_from span {
+    color: var(--move_color);
 }
-.all_pros{
+
+/* =====================
+   All Pros Styles
+   ===================== */
+.all_pros {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 50px;
+    padding: 80px;
 }
-.pros p{
+
+.pros p {
     font-family: Source Sans Pro;
     font-size: 16px;
     font-style: italic;
@@ -113,200 +154,220 @@ h1{
     line-height: 24px;
     text-align: center;
     width: 150px;
-    color : var(--homecolor);
-
-}
-.pros h3{
     color: var(--homecolor);
 }
-.pros img{
-    border-radius:50%;
-    -webkit-border-radius:50%;
-    -moz-border-radius:50%;
-    -ms-border-radius:50%;
-    -o-border-radius:50%;
+
+.pros h3 {
+    color: var(--homecolor);
 }
-        .sec_2{
-                height: 400px;
-                width: 100%;
-                background-color: beige;
-        }
-            .sec_2_img{border-radius:50%;
-                width: 160px;
-                height: 160px;
 
-            }
-            blockquote{
-                width: 730px;
-                height: 68px;
+.pros img {
+    border-radius: 50%;
+}
 
+/* =====================
+   Section 2 Styles
+   ===================== */
+.sec_2 {
+    height: 400px;
+    width: 100%;
+    background-color: beige;
+}
 
+.sec_2_img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+}
+
+blockquote {
+    width: 730px;
+    height: 68px;
     font-family: Source Sans Pro;
-font-size: 22px;
-font-weight: 400;
-line-height: 33.6px;
-text-align: left;
-margin-bottom: 20px;
-
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
-.div_in_s2 h3{
-    font-family: Source Sans Pro;
-font-size: 22px;
-font-weight: 700;
-line-height: 33.6px;
-text-align: left;
-width: 129px;
-height: 34px;
-
-}
-.div_in_s2 p{
-    font-family: Source Sans Pro;
-font-size: 22px;
-font-style: italic;
-font-weight: 400;
-line-height: 33.6px;
-text-align: left;
-
-}
-.div_in_s2{
+.div_in_s2 {
     padding: 20px;
 }
-.banner_3{
- display: flex;       
- align-items: center;
- justify-content: center;
- width: 100%;
- color: var(--homecolor);
- background: var(--move_color);
- height: 400px;
 
+.div_in_s2 h3 {
+    font-family: Source Sans Pro;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: left;
+    width: 129px;
+    height: 34px;
 }
-.sec_3{
+
+.div_in_s2 p {
+    font-family: Source Sans Pro;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: left;
+}
+
+/* =====================
+   Banner 3 Styles
+   ===================== */
+.banner_3 {
+    display: flex;       
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--homecolor);
+    background: var(--move_color);
+    height: 400px;
+}
+
+/* =====================
+   Section 3 Styles
+   ===================== */
+.sec_3 {
     background-color: white;
 }
-.art3{
+
+.art3 {
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 450px;
-    width: 100% ;
+    width: 100%;
     justify-content: center;
     align-content: space-between;
-    
-    margin: 50px ;
+    margin: 50px;
+}
 
-}
-.art3 h2{
+.art3 h2 {
     font-family: Source Sans Pro;
-font-size: 32px;
-font-weight: 300;
-line-height: 40.22px;
-text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40.22px;
+    text-align: center;
+}
 
-}
-.art3 h2 span{
+.art3 h2 span {
     font-family: Source Sans Pro;
-font-size: 32px;
-font-weight: 700;
-line-height: 40.22px;
-text-align: center;
-color: var(--move_color);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px;
+    text-align: center;
+    color: var(--move_color);
 }
-.all_tuto{
+
+/* =====================
+   All Tutorials Styles
+   ===================== */
+.all_tuto {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+}
 
-  }
-  
-.tuto{
+.tuto {
     width: 255px;
     height: 335px;
-
     display: flex;
     margin-top: 20px;
-    
     flex-direction: column;
     position: relative;
 }
-.video_x{
+
+.video_x {
     position: relative;
     display: inline-block;
 }
-.tuto_img{
+
+.tuto_img {
     height: 154px;
     width: 100%;
 }
+
 .play {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the play icon in both directions */
-    width: 50px; /* Adjust the size of the play button */
-    height: 50px; /* Ensure it scales proportionally */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
 }
-.info-smile{
+
+/* =====================
+   Info Smile Styles
+   ===================== */
+.info-smile {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
     padding: 15px;
-    
 }
-.info-smile h3{
-    font-family: Source Sans Pro;
-font-size: 16px;
-font-weight: 700;
-line-height: 20.11px;
-text-align: left;
 
-}
-.smile-text{
+.info-smile h3 {
     font-family: Source Sans Pro;
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-color: rgba(7, 22, 41, 0.5);
-;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: left;
 }
-.info-smile h4,p{
+
+.smile-text {
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(7, 22, 41, 0.5);
+}
+
+.info-smile h4, p {
     color: var(--move_color);
-
 }
-.info-smile img{
+
+.info-smile img {
     width: 30px;
     height: 30px;
     float: left;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
+
+/* =====================
+   Star Rating Styles
+   ===================== */
 .star-rating .star {
     font-size: 15px;
     margin-right: 5px;
-  }
-  
-  .star-rating .star:nth-child(-n+4) {
+}
+
+.star-rating .star:nth-child(-n+4) {
     color: var(--move_color);
-  }
-  
-  .star-rating .star:nth-child(5) {
+}
+
+.star-rating .star:nth-child(5) {
     color: grey;
-  }
-  .star_min{
+}
+
+/* =====================
+   Additional Styles
+   ===================== */
+.star_min {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .icon_name{
+}
+
+.icon_name {
     display: flex;
     align-items: center;
-  }
-  .icon_name h4{
+}
+
+.icon_name h4 {
     margin-left: 5px;
-  }
- 
+}
