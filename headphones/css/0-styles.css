@@ -46,10 +46,7 @@
         width: 1170px;
     }
 }
-/* the mobile properties goes here  */
-@media (max-width: 480px) {
-    /* Mobile styles go here */
-}
+
 
 /* end of global classes  */
 /* start landing header  */
@@ -98,14 +95,33 @@ header{
 .landing header nav ul li a:active {
     color: #FF6565;
 }
-
+/* the mobile properties goes here  */
+@media (max-width: 480px) {
+    .landing{
+        height:auto!important;
+        min-height:100vh;
+    /* Mobile styles go here */
+}
+.landing header nav{
+    display: none;
+}
+.landing .container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
 /* end of header  */
 /* start intro section  */
 /* .landing .container{
     margin-bottom: 100px;
     padding-top: var(--top-p);
 } */
-.landing .container .hero-piece{
+/* .landing .container .hero-piece{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -115,6 +131,13 @@ header{
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     text-align: center;
+} */
+.landing .container .hero-piece{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
 }
 .landing .container .hero-piece .heading{
     font-family: Source Sans Pro;
@@ -162,7 +185,7 @@ header{
     font-weight: 400;
     line-height: 26px;
     color: var(--main-color);
-    width: 637px;
+    max-width: 637px;
     
 }
 /* End of INTRO  */
@@ -222,6 +245,12 @@ header{
     justify-content: center;
     gap: 30px;
 }
+@media (max-width: 480px) {
+    .services .container .services-content{
+        max-width:100px ;
+        margin: auto;
+    }
+}
 /* End Servies Section  */
 /* Start Results Section  */
 .results{
@@ -254,13 +283,14 @@ header{
     line-height: 26px;
     text-align: center;
     color: white;
-    padding-bottom: 60px;
 
 
 
 }
 .results .container .insight-card{
     justify-items: center;
+    padding-top: 70px;
+    
 }
 .results .container .insight-card .card{
         width: 157.5px;
@@ -271,7 +301,16 @@ header{
         display: flex;
         flex-direction: column; 
         justify-content: end;
+        margin-bottom: 25px;
         
+
+}
+@media (max-width: 480px) {
+    .results .container .insight-card {
+        max-width: 200px;
+        margin: auto;
+    }
+
 
 }
 .results .container .insight-card .card  p:first-of-type{
@@ -387,4 +426,21 @@ line-height: 15.08px;
 text-align: left;
 
 }
+@media (max-width: 480px) {
+    .contact .container input{
+        max-width: 250px;
+    }
+    footer .container{
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container p{
+        order: 2;
+        align-self: center; 
+    }
+    footer .container .social-media{
+        padding: 15px;
+    }
 
+}
