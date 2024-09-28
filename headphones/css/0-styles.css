@@ -1,0 +1,390 @@
+/* start global classes */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --top-p: 15px;
+    --bottom-p: 15px;
+    --main-color: rgb(255, 255, 255);
+    --secondary-color: #FF6565;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+    header{
+        width: 750px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+    header{
+        width: 970px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+    header{
+        width: 1170px;
+    }
+}
+/* the mobile properties goes here  */
+@media (max-width: 480px) {
+    /* Mobile styles go here */
+}
+
+/* end of global classes  */
+/* start landing header  */
+.landing{
+    background-image: url(/images/headphones_hero_1.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding-top: var(--top-p);
+    padding-bottom: var(--bottom-p);
+    
+}
+header{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.landing header .logo img{
+    height: 30px;
+}
+.landing header nav ul{
+    display: flex;
+    gap: 20px;
+    
+    
+}
+.landing header nav ul li{
+    list-style: none;
+    
+}
+.landing header nav ul li a{
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 15.08px;
+    text-align: left;
+    color: var(--main-color);
+    text-decoration: none;
+}
+.landing header nav ul li a:hover{
+    color: #FF6565 !important ;
+}
+.landing header nav ul li a:active {
+    color: #FF6565;
+}
+
+/* end of header  */
+/* start intro section  */
+/* .landing .container{
+    margin-bottom: 100px;
+    padding-top: var(--top-p);
+} */
+.landing .container .hero-piece{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.landing .container .hero-piece .heading{
+    font-family: Source Sans Pro;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px;
+    padding-top: 200px;
+
+    color: var(--main-color);
+}
+.landing .container .hero-piece .sub-heading{
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    color: var(--main-color);
+    padding: 5px;
+   
+
+}
+.landing .container .hero-piece button{ 
+    width: 162px;
+    height: 44px;
+    box-shadow: 10px 10px 40px 7px  rgb(0, 0, 0);
+    background-color:#FF6565;
+    border-radius: 25px   ;
+    -webkit-border-radius: 25px   ;
+    -moz-border-radius: 25px   ;
+    -ms-border-radius: 25px   ;
+    -o-border-radius: 25px   ;
+    color: var(--main-color);
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+.landing .container .hero-piece button:hover{
+    opacity: 0.9
+}
+.landing .container .hero-piece button:active {
+    opacity: 0.9;
+}
+.landing .container .hero-piece .description{
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--main-color);
+    width: 637px;
+    
+}
+/* End of INTRO  */
+/* star services */
+.services .container{
+    padding-bottom: 100px;
+}
+.services .container .logo-service{
+    width: 61.43px;
+    height: 61.44px;
+
+}
+.services .container h3{
+    font-family: SourceSansPro;
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    
+    
+}
+.services .container .description{
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.services .container .services-content .service .title{
+    font-family: SourceSansPro;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.services .container .services-content .service .description-service{
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+}
+.services .container .services-content .service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services .container .services-content{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    gap: 30px;
+}
+/* End Servies Section  */
+/* Start Results Section  */
+.results{
+    padding-bottom: var(--bottom-p);
+    padding-top: var(--top-p);
+    background-image: url(/images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.results .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.results .container h3{
+    font-family: SourceSansPro;
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: center;
+    color: white;
+    padding-bottom: 60px;
+    
+
+
+}
+.results .container p{
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    padding-bottom: 60px;
+
+
+
+}
+.results .container .insight-card{
+    justify-items: center;
+}
+.results .container .insight-card .card{
+        width: 157.5px;
+        height: 150px;
+        background: var(--secondary-color);
+        text-align: center;
+        clip-path: polygon( 50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+        display: flex;
+        flex-direction: column; 
+        justify-content: end;
+        
+
+}
+.results .container .insight-card .card  p:first-of-type{
+    font-family: Source Sans Pro;
+    font-weight: 700;
+font-size: 46px;
+padding: 0;
+padding-bottom:20px ;
+}
+.results .container .insight-card .card  p:last-of-type{
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    padding: 0;
+    padding-bottom:30px ;
+}
+/* End of results section  */
+/* start contact us section  */
+.contact{
+
+    
+}
+.contact .container{
+
+
+}
+.contact .container h3{
+    font-family: SourceSansPro;
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: center;
+    padding-bottom: 50px;
+
+
+
+}
+.contact .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+.contact .container form input{
+    border: none ;
+    border-bottom: 2px solid  rgba(7, 22, 41, 0.407);
+    ;
+    padding: 5px 20px 5px 1px;
+    margin: 20px 0;
+    width: 335px;
+
+}
+.contact .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+
+}
+input,
+input::placeholder {
+    font-family: SourceSansPro;
+    font-size: 14px;
+    line-height: 16.41px;
+    text-align: left;
+    color:rgba(7, 22, 41, 1);
+    font-size: 16px;
+    font-weight: 600;
+}
+.contact .container form button{ 
+    width: 162px;
+    height: 44px;
+    border: none;
+    background-color:#FF6565;
+    border-radius: 25px   ;
+    -webkit-border-radius: 25px   ;
+    -moz-border-radius: 25px   ;
+    -ms-border-radius: 25px   ;
+    -o-border-radius: 25px   ;
+    color: var(--main-color);
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+/* the End of Contact section  */
+footer{
+    background-color:rgba(7, 22, 41, 1);;
+}
+footer .container{
+    padding-top:calc(var(--top-p) + 40px);
+    padding-bottom:calc(var(--top-p) + 10px);
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start ;
+    min-height: 140px;
+}
+footer .container .logo img{
+    height: 30px;
+}
+footer .container p{
+    align-self: flex-end;
+    color: #777;
+    font-family: Source Sans Pro;
+font-size: 12px;
+font-weight: 400;
+line-height: 15.08px;
+text-align: left;
+
+}
+
